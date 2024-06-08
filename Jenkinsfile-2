@@ -4,7 +4,7 @@ pipeline {
         stage('Build and Sonar Analysis'){
             steps{
                 echo 'Building'  
-                withSonarCubeEnv('jenkins-sonar'){
+                withSonarQubeEnv('jenkins-sonar'){
                 	sh 'mvn -B -DskipTests clean package sonar:sonar'
                 } 
             }
