@@ -1,1 +1,1 @@
-Change at 9.43pm
+The purpose of this Spring REST API project is to create a CICD PIPELINE using JENKINS. A JUnit and Mokito test has been created to include testing in the PIPELINE. It also integrates SonarCube to Analyse the project and produce a report.
