@@ -14,4 +14,12 @@ pipeline {
             }
         }
     }
+    post{
+    	always{
+    		junit '**/target/*.xml'
+    	}
+    	failure{
+    		echo "failed"
+    	}
+    }
 }
