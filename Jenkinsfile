@@ -16,7 +16,8 @@ pipeline {
     }
     post{
     	always{
-    		junit '**/target/*.xml'
+    		archiveArtifacts artifacts: '**/target/*.jar', allowEmptyArchive: true
+    		junit '**/target/surefire-reports/*.xml'
     	}
     	failure{
     		echo "failed"
